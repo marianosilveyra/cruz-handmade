@@ -3,7 +3,6 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 
 const Card = ({ title, subtitle, image, href }) => {
-  subtitle = "lskdjfñlkdsa ñlksadj  ñlksa jf ñlksad f ñaslkd fñlk añslkd ñlkasdjf "
   return (
     <motion.div className="flex w-72 group transition-all duration-300 hover:scale-105">
       <Link
@@ -20,7 +19,7 @@ const Card = ({ title, subtitle, image, href }) => {
           />
         </div>
         <div className="w-full h-1/4 rounded-3xl bg-white flex items-center px-6 group-hover:bg-blue-default duration-300">
-          <div className="w-full text-center font-PJakarta line-clamp-2 group-hover:text-white">
+          <div className="w-full text-center font-PJakarta group-hover:text-white">
             <p className="text-2xl font-semibold text-blue-default">{title}</p>
             <p>{subtitle}</p>
           </div>
